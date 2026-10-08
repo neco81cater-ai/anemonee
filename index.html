@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>舞台の記憶</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <img src="images/anemone.jpg" alt="ロゴ" class="logo-image" />
+  </nav>
+
+  <nav class="menu-nav">
+    <button onclick="showPage('home')">ホーム</button>
+    <button onclick="showPage('profile')">プロフィール</button>
+    <button onclick="showPage('works')">作品</button>
+    <button onclick="showPage('contact')">お問い合わせ</button>
+  </nav>
+
+  <header>
+    <h2>同じ舞台に立った仲間たちと</h2>
+    <p>
+    </p>
+    <h2>もう一度、同じ舞台へ。</h2>
+    <p>
+    </p>
+    <h2>何度でも新しい物語を紡ぎます。</h2>
+<p>
+    </p>
+    <h3>↓ 公演情報</h3>
+    <h3>稽古風景</h3>
+    <h3>劇団の日常 ↓</h3>
+
+    <div class="socials">
+      <a href="https://example.com" target="_blank" rel="noopener">
+        <img src="images/insta.jpg" class="img-small" alt="Instagram" />
+      </a>
+      <a href="https://example.com" target="_blank" rel="noopener">
+        <img src="images/X.jpg" class="img-small" alt="X" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <h2>ようこそ！</h2>
+      <p>ここは私だけの、舞台と物語のホームページです。</p>
+      <p>夢を見て、劇場へと向かう日々を大切にしています。</p>
+      <button class="big-button" onclick="showPage('profile')">プロフィールを見る</button>
+    </section>
+
+    <section id="profile" class="page hidden">
+      <h2>プロフィール</h2>
+      <p>名前：〇〇</p>
+      <p>大学生 / 演劇好き / プログラミングを勉強中</p>
+      <p>舞台や物語に魅了され、毎日新しい発見をしています。</p>
+      <p>音楽、映画、ゲーム、演劇を通じて表現を楽しんでいます。</p>
+    </section>
+
+    <section id="works" class="page hidden">
+      <h2>作品</h2>
+
+      <div class="card">
+        <h3>プログラミング</h3>
+        <p>これまでに作った簡単な作品や学習の記録を載せています。</p>
+        <button onclick="alert('プログラミング作品を見る')">詳しく見る</button>
+      </div>
+
+      <div class="card">
+        <h3>演劇</h3>
+        <p>脚本、舞台作品のコンセプトや稽古風景を紹介できます。</p>
+        <button onclick="alert('演劇作品を見る')">詳しく見る</button>
+      </div>
+    </section>
+
+    <section id="contact" class="page hidden">
+      <h2>お問い合わせ</h2>
+      <p>舞台の話、作品の話、コラボの話などお気軽にどうぞ。</p>
+      <button onclick="alert('お問い合わせフォームへ移動します')">お問い合わせ</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 舞台の記憶</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
